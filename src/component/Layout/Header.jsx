@@ -1,7 +1,13 @@
+import Logo from "../../assets/logo.jpg";
+
 const Header = () => {
   return (
-    <header className="h-16 bg-blue-600 text-white flex items-center px-4 ">
-      Header
+<header className="sticky top-0 z-50 h-16 flex items-center px-12  bg-linear-to-r 
+from-gray-400/40 via-red-400/50 to-red-300/60">
+      <div className=" flex flex-row justify-between w-full ">
+        <img src={Logo} alt="Image" className="w-12 h-12 rounded-full" />
+        <div>Profile</div>
+      </div>
     </header>
   );
 };

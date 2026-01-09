@@ -36,7 +36,8 @@ const Sidebar = () => {
   ];
   const navigate = useNavigate()
   return (
-    <aside className="w-72 bg-gray-300 border border-gray-400 p-2 font-semibold  flex flex-col">
+    <aside className="w-72 border-gray-400 border-l p-2 font-semibold  flex flex-col bg-linear-to-b 
+from-gray-400/40 via-red-400/40 to-red-300/60">
       {item.map((nav, index) => (
         <div
           key={index}

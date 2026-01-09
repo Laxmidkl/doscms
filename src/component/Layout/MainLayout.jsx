@@ -11,7 +11,7 @@ const MainLayout = () => {
       <div className="flex h-[calc(100vh-4rem)]">
         <Sidebar />
 
-        <main className=" w-full bg-gray-200">
+        <main className=" w-full">
           <Outlet />
         </main>
       </div>
