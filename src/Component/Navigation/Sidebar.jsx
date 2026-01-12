@@ -1,3 +1,4 @@
+
 import { FaRegFileAlt } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { MdOutlineEventNote } from "react-icons/md";
@@ -23,26 +24,45 @@ const Sidebar = () => {
       icon: <RiBloggerLine />,
       link :"/blog"
     },
+  
     {
-      name: "Events",
-      icon: <MdOutlineEventNote />,
-      link :"/event"
-    },
-    {
-      name: "Banner",
+      name: "Gallery",
       icon: <FaRegFileAlt />,
-      link :"/banner"
+      link :"/gallery"
     },
+
+      {
+      name: "Courses",
+      icon: <RiBloggerLine />,
+      link :"/courses"
+    },
+
+  {
+      name: "Events",
+      icon: <FaRegFileAlt />,
+      link :"/events"
+    },
+
+
+      {
+      name: "Contact",
+      icon: <RiBloggerLine />,
+      link :"/contact"
+    },
+    {
+      name: "Book Now",
+      icon: <MdOutlineEventNote />,
+      link :"/book"
+    }
   ];
   const navigate = useNavigate()
   return (
-    <aside className="w-72 border-gray-400 border-l p-2 font-semibold  flex flex-col bg-linear-to-b 
-from-gray-400/40 via-red-400/40 to-red-300/60">
+    <aside className="w-72 h-full overflow-y-auto  [scrollbar-width:0] [&::-webkit-scrollbar]:hidden scrollbar-hide border-gray-400 border-l p-2 font-semibold  flex flex-col bg-gray-400">
       {item.map((nav, index) => (
         <div
           key={index}
           onClick={() => navigate(nav.link)}
-          className="text-black rounded-lg p-3 mt-5 hover:bg-red-500 hover:text-white flex gap-2 text-lg cursor-pointer"
+          className=" text-black rounded-lg p-3 mt-5 hover:bg-red-500 hover:text-gray-100 flex gap-2 text-lg cursor-pointer"
         >
           <span className=" mt-1.5 ml-4 ">{nav.icon}</span>
           {nav.name} 
