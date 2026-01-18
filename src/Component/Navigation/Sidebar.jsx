@@ -57,7 +57,7 @@ const Sidebar = () => {
   ];
   const navigate = useNavigate()
   return (
-    <aside className="w-72 h-full overflow-y-auto  [scrollbar-width:0] [&::-webkit-scrollbar]:hidden scrollbar-hide border-gray-400 border-l p-2 font-semibold  flex flex-col bg-gray-400">
+    <aside className="w-56 h-full overflow-y-auto [scrollbar-width:0] [&::-webkit-scrollbar]:hidden scrollbar-hide border-gray-400 border-l p-2 font-semibold  flex flex-col bg-gray-400">
       {item.map((nav, index) => (
         <div
           key={index}
